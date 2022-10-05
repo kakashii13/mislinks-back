@@ -26,7 +26,7 @@ describe("initialized db with a user", () => {
     const user = {
       username: "test",
       name: "test",
-      password: "test1",
+      password: "test",
     };
 
     await api.post("/api/users").send(user).expect(201);

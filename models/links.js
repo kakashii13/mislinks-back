@@ -10,6 +10,8 @@ const LinkSchema = new mongoose.Schema({
     required: true,
   },
   description: String,
+  category: String,
+  fav: Boolean,
   user: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "User",

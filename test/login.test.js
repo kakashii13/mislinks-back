@@ -6,7 +6,7 @@ const api = supertest(app);
 test("login db", async () => {
   const user = {
     username: "test",
-    password: "test1",
+    password: "test",
   };
 
   await api.post("/api/login").send(user).expect(200);
